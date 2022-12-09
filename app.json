@@ -1,0 +1,33 @@
+{
+  "expo": {
+    "name": "smelly-celery",
+    "slug": "snack-dea6b2b7-eb38-470e-93b2-5fc949570e8a",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./components/assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./components/assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./components/assets/adaptive-icon.png",
+        "backgroundColor": "#FFFFFF"
+      }
+    },
+    "web": {
+      "favicon": "./components/assets/favicon.png"
+    }
+  }
+}
