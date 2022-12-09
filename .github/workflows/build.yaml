@@ -1,0 +1,22 @@
+name: Build App
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [18.x, 19.x]
+
+    steps:
+    - name: Вытягивание файлов из репозитория
+      uses: actions/checkout@v2
+    - name: React Native Build
+      uses: bamachoub/react-native-build-action@v1.0.0

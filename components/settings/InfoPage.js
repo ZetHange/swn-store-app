@@ -18,7 +18,7 @@ export default function AssetExample() {
           </Text>
       </Card>
       <Card style={styles.card}>
-        <Text onPress={() => navigation.navigate('Details')}>Вход в SWN ID</Text>
+        <Text onPress={() => }>Вход в SWN ID</Text>
       </Card>
     </View>
   );
