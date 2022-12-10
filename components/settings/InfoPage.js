@@ -18,7 +18,7 @@ function HomeScreen({ navigation }) {
       <Text style={styles.paragraph}>SWN STORE App</Text>
       <Card style={styles.cardButton}>
         <Text style={{ fontWeight: "bold", textAlign: "center", margin: 0 }}>
-          Версия: β 0.0.7.1
+          Версия: β 0.0.7.2
         </Text>
         <Text style={{ textAlign: "center", marginTop: 0, fontSize: 10 }}>
           От 10 декабря 2022

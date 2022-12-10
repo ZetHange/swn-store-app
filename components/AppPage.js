@@ -1,9 +1,25 @@
-import * as React from "react";
-import { View, StyleSheet } from "react-native";
+import React, { useEffect, useRef } from "react";
+import { View, StyleSheet, BackHandler, Alert, TextInput } from "react-native";
 import { WebView } from "react-native-webview";
-import { Appbar } from "react-native-paper";
+import { Appbar, Button } from "react-native-paper";
 
 const page = () => {
+  const webViewRef = useRef(null);
+
+  const goback = () => {
+    webViewRef.current.goBack();
+    return true;
+  };
+
+  useEffect(() => {
+    const backHandler = BackHandler.addEventListener(
+      "hardwareBackPress",
+      goback
+    );
+
+    return () => backHandler.remove();
+  }, []);
+
   return (
     <View style={styles.container}>
       <Appbar.Header
@@ -15,8 +31,9 @@ const page = () => {
         ]}
       />
       <WebView
-        originWhitelist={["*"]}
-        source={{ uri: "https://swn-store.tk/app" }}
+        ref={webViewRef}
+        originWhitelist={["http://*", "https://*"]}
+        source={{ uri: "http://swn-store.tk/app" }}
       />
     </View>
   );
