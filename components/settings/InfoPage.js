@@ -18,7 +18,7 @@ export default function AssetExample() {
           </Text>
       </Card>
       <Card style={styles.card}>
-        <Text onPress={() => }>Вход в SWN ID</Text>
+        <Text>Вход в SWN ID</Text>
       </Card>
     </View>
   );
@@ -34,7 +34,7 @@ const styles = StyleSheet.create({
     height: '100%',
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#f3f6f4',
+    backgroundColor: '#fff',
   },
   paragraph: {
     margin: 12,

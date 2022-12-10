@@ -29,7 +29,7 @@ const aboutApp = () => {
         style={[
           {
             height: 0,
-            backgroundColor: "#f3f6f4",
+            backgroundColor: "#fff",
           },
         ]}
       >

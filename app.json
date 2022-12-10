@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "smelly-celery",
+    "name": "SWN Store",
     "slug": "snack-dea6b2b7-eb38-470e-93b2-5fc949570e8a",
-    "version": "1.0.0",
+    "version": "0.0.7",
     "orientation": "portrait",
     "icon": "./components/assets/icon.png",
     "userInterfaceStyle": "light",
@@ -24,10 +24,17 @@
       "adaptiveIcon": {
         "foregroundImage": "./components/assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "buildType": "apk",
+      "package": "com.zethange.sto"
     },
     "web": {
       "favicon": "./components/assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "ba0d2143-6ef0-473c-9655-afdd1f6f13f6"
+      }
     }
   }
 }
