@@ -1,5 +1,6 @@
 import * as React from "react";
-import { BottomNavigation, Appbar, Provider } from "react-native-paper";
+import { BottomNavigation, Provider } from "react-native-paper";
+import AwesomeIcon from "react-native-vector-icons/FontAwesome";
 
 import InfoPage from "./components/settings/InfoPage";
 import GamePage from "./components/GamePage";
@@ -13,8 +14,8 @@ const aboutApp = () => {
   const [index, setIndex] = React.useState(0);
   const [routes] = React.useState([
     { key: "game", title: "Игры", focusedIcon: "gamepad" },
-    { key: "app", title: "Приложения", focusedIcon: "cellphone" },
-    { key: "settings", title: "Настройки", focusedIcon: "database-settings" },
+    { key: "app", title: "Приложения", focusedIcon: "mobile" },
+    { key: "settings", title: "Настройки", focusedIcon: "gear" },
   ]);
 
   const renderScene = BottomNavigation.SceneMap({
@@ -24,16 +25,11 @@ const aboutApp = () => {
   });
 
   return (
-    <Provider>
-      <Appbar.Header
-        style={[
-          {
-            height: 0,
-            backgroundColor: "#fff",
-          },
-        ]}
-      >
-      </Appbar.Header>
+    <Provider
+      settings={{
+        icon: (props) => <AwesomeIcon {...props} />,
+      }}
+    >
       <BottomNavigation
         navigationState={{ index, routes }}
         barStyle={{ backgroundColor: "#fafafa" }}

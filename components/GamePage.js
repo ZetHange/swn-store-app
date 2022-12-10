@@ -1,11 +1,23 @@
 import * as React from "react";
-import { View, StyleSheet } from "react-native";
+import { View, StyleSheet, BackHandler } from "react-native";
 import { WebView } from "react-native-webview";
+import { Appbar } from "react-native-paper";
 
 const page = () => {
   return (
     <View style={styles.container}>
-      <WebView originWhitelist={['*']} source={{ uri: "https://swn-store.tk" }} />
+      <Appbar.Header
+        style={[
+          {
+            height: 0,
+            backgroundColor: "#fff",
+          },
+        ]}
+      />
+      <WebView
+        originWhitelist={["*"]}
+        source={{ uri: "http://swn-store.tk" }}
+      />
     </View>
   );
 };
