@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="ed4b680a-d0fd-4814-b429-e0f711cf77a5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/GamePage.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/GamePage.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/assets/icon.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/icon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/assets/splash.png" beforeDir="false" afterPath="$PROJECT_DIR$/components/assets/splash.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/settings/InfoPage.js" beforeDir="false" afterPath="$PROJECT_DIR$/components/settings/InfoPage.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2IolqnQn9WWhfdSlxxSQlUELgX6" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/zethange/Git/swn-store-app-native&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ed4b680a-d0fd-4814-b429-e0f711cf77a5" name="Changes" comment="" />
+      <created>1670856009646</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1670856009646</updated>
+      <workItem from="1670856013751" duration="32000" />
+      <workItem from="1671114560408" duration="35000" />
+    </task>
+    <servers />
+  </component>
+</project>

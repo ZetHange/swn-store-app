@@ -8,6 +8,7 @@ import { createStackNavigator } from "@react-navigation/stack";
 import UserScreen from "./about/license";
 import LoginScreen from "./about/login";
 import PoliticaScreen from "./about/politica";
+import NopeScreen from "./about/nope";
 
 const Stack = createStackNavigator();
 
@@ -18,10 +19,10 @@ function HomeScreen({ navigation }) {
       <Text style={styles.paragraph}>SWN STORE App</Text>
       <Card style={styles.cardButton}>
         <Text style={{ fontWeight: "bold", textAlign: "center", margin: 0 }}>
-          Версия: β 0.0.7.2
+          Версия: 0.0.7
         </Text>
         <Text style={{ textAlign: "center", marginTop: 0, fontSize: 10 }}>
-          От 10 декабря 2022
+          От 16 декабря 2022 года
         </Text>
       </Card>
       <Card style={styles.cardButton} onPress={() => navigation.navigate('Вход в SWN ID')}>
@@ -32,6 +33,9 @@ function HomeScreen({ navigation }) {
       </Card>
       <Card style={styles.cardButton} onPress={() => navigation.navigate('Пользовательское соглашение')}>
         <Text style={{ fontWeight: "400" }}>Пользовательское соглашение</Text>
+      </Card>
+      <Card style={styles.cardButton} onPress={() => navigation.navigate('О защите авторских прав')}>
+        <Text style={{ fontWeight: "400" }}>О защите авторских прав</Text>
       </Card>
       <Text style={styles.paragraphlite}>© Stalker World News 2020-2022.</Text>
     </View>
@@ -46,6 +50,7 @@ const app = () => {
         <Stack.Screen name="Вход в SWN ID" component={LoginScreen} />
         <Stack.Screen name="Политика конфидециальности" component={PoliticaScreen} />
         <Stack.Screen name="Пользовательское соглашение" component={UserScreen} />
+        <Stack.Screen name="О защите авторских прав" component={NopeScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

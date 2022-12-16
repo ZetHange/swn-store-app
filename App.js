@@ -1,5 +1,5 @@
 import * as React from "react";
-import { BottomNavigation, Provider } from "react-native-paper";
+import { BottomNavigation, Provider, MD3LightTheme } from "react-native-paper";
 import AwesomeIcon from "react-native-vector-icons/FontAwesome";
 
 import InfoPage from "./components/settings/InfoPage";
@@ -9,6 +9,7 @@ import AppPage from "./components/AppPage";
 const GameRoute = () => <GamePage />;
 const AppRoute = () => <AppPage />;
 const SettingsApp = () => <InfoPage />;
+
 
 const aboutApp = () => {
   const [index, setIndex] = React.useState(0);
@@ -24,6 +25,17 @@ const aboutApp = () => {
     settings: SettingsApp,
   });
 
+  const theme = {
+    ...MD3LightTheme,
+    custom: 'property',
+    colors: {
+      ...MD3LightTheme.colors,
+      brandPrimary: '#fefefe',
+      brandSecondary: 'red',
+    },
+  };
+
+  
   return (
     <Provider
       settings={{
@@ -32,9 +44,11 @@ const aboutApp = () => {
     >
       <BottomNavigation
         navigationState={{ index, routes }}
-        barStyle={{ backgroundColor: "#fafafa" }}
+        barStyle={{ backgroundColor: '#fafafa' }}
         onIndexChange={setIndex}
         renderScene={renderScene}
+        theme={theme}
+        keyboardHidesNavigationBar="true"
       />
     </Provider>
   );

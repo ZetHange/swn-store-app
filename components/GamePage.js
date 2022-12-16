@@ -33,7 +33,7 @@ const page = () => {
       <WebView
         ref={webViewRef}
         originWhitelist={["http://*", "https://*"]}
-        source={{ uri: "http://swn-store.tk" }}
+        source={{ uri: "http://swn-store.tk/" }}
       />
     </View>
   );

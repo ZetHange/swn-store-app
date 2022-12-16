@@ -7,9 +7,9 @@
     "icon": "./components/assets/icon.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./components/assets/splash.png",
+      "image": "./components/assets/splash1.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
+      "backgroundColor": "#000000"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
@@ -18,18 +18,19 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.zethange.swnstore"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./components/assets/adaptive-icon.png",
+        "foregroundImage": "./components/assets/icon.png",
         "backgroundColor": "#FFFFFF"
       },
       "buildType": "apk",
-      "package": "com.zethange.sto"
+      "package": "com.zethange.swnstore"
     },
     "web": {
-      "favicon": "./components/assets/favicon.png"
+      "favicon": "./components/assets/icon.png"
     },
     "extra": {
       "eas": {
